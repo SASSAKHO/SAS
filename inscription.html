@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .form-group .error {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .or-separator {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        .or-separator::before,
+        .or-separator::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background: #ccc;
+        }
+        .or-separator::before {
+            left: 0;
+        }
+        .or-separator::after {
+            right: 0;
+        }
+        .or-separator span {
+            background: #fff;
+            padding: 0 10px;
+            font-size: 14px;
+            color: #888;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .social-buttons button {
+            flex: 1;
+            margin: 0 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .google {
+            background: #4285F4;
+            color: #fff;
+        }
+        .microsoft {
+            background: #f2f2f2;
+            color: #000;
+        }
+        .facebook {
+            background: #3b5998;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inscription</h1>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">S'inscrire</button>
+            </div>
+            <div class="error" id="error-message"></div>
+            
+        </form>
+    </div>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche la soumission réelle du formulaire
+
+            // Récupération des valeurs du formulaire
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Mot de passe correct pour l'exemple
+            const correctPassword = 'sas'; 
+
+            if (password === correctPassword) {
+                // Si le mot de passe est correct, redirection vers la page principale
+                window.location.href = 'index.html';
+            } else {
+                // Sinon, affichage du message d'erreur
+                document.getElementById('error-message').textContent = 'Mot de passe incorrect';
+            }
+        });
+    </script>
+</body>
+</html>

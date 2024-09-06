@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sas-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <h1>sas-shop</h1>
+        <div class="onglets">
+            <p class="link"></p><p>
+                <a href="menu3.html">Nouveautés</a>
+            <p class="link"></p><p>
+                <a href="menu.html">Homme</a>
+            </p>
+            <p class="link"></p><p>
+                <a href="menu2.html">Femme</a>
+            <p class="link"></p><p>
+                <a href="menu4.html">Enfant</a>
+                <P class="link"></P><P>
+                <a href="inscription.html"> Inscription</a>
+                <p class="link"></p><p>
+                <a href="page.html">contacte
+                </a>
+            <form>
+                <input type="search" placeholder="Rechercher">
+            </form>
+            <p><i class="far fa-heart"></i></p>
+            <!-- Onglet Panier cliquable -->
+            <p id="cartIcon">
+                <a href="panier.html"><i class="fas fa-shopping-cart"></i></a>
+                <span id="cartCount">0</span> <!-- Affichage du nombre d'articles -->
+            </p>            
+            </p>
+        </div>
+    </nav>
+    <!-- Fin de la barre de navigation -->
+
+    <!-- Header -->
+    <header>
+        <img src="logo2.png" alt="Description du logo" id="logo">
+        <button>Naviguer <i class="fas fa-paper-plane"></i></button>
+    </header>
+    <!-- Fin du header -->
+
+    <!-- Section principale -->
+    <section class="main">
+        <!-- Toutes les cartes -->
+        <div class="cards">
+            <div class="card" data-id="1" data-title="Vetement pour homme" data-price="15000cfa">
+                <img src="ruby and james maxton hall.jpg" alt="Vetement pour homme">
+                <div class="card-header">
+                    <h4 class="title">Vetement pour homme</h4>
+                    <h4 class="price">15000cfa</h4>
+                </div>
+                <div class="card-body">
+                    <p>Vetement pour homme</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="2" data-title="Vetement pour femme" data-price="20000cfa">
+                <img src="Robe Cami plissée, boutonnée, de couleur unie et de grande taille, design à la mode pour un usage quotidien.jpg" alt="Vetement pour femme">
+                <div class="card-header">
+                    <h4 class="title">Vetement pour femme</h4>
+                    <h4 class="price">20000cfa</h4>
+                </div>
+                <div class="card-body">
+                    <p>Vetement pour femme</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+
+            <div class="card" data-id="3" data-title="Vetement pour enfant" data-price="15000cfa">
+                <img src="Polo avec motif lettre & Short.jpg" alt="Vetement pour enfant">
+                <div class="card-header">
+                    <h4 class="title">Vetement pour enfant</h4>
+                    <h4 class="price">15000cfa</h4>
+                </div>
+                <div class="card-body">
+                    <p>Vetement pour enfant</p>
+                    <button class="add-to-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de toutes les cartes -->
+    </section>
+    <!-- Fin de la section principale -->
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; Contactez-nous au 764604572</p>
+        <div class="social-media">
+            <p><i class="fab fa-facebook-f"></i></p>
+            <p><i class="fab fa-twitter"></i></p>
+            <p><i class="fab fa-instagram"></i></p>
+            <p><i class="fab fa-linkedin-in"></i></p>
+        </div>
+    </footer>
+    <!-- Fin du pied de page -->
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
